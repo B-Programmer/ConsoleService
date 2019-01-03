@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://console.bprogrammer.com/doc/integrify-console-service"
+           targetNamespace="http://console.bprogrammer.com/doc/integrify-console-service" elementFormDefault="qualified">
+
+    <xs:element name="getConsoleDocRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="accountNumber" type="xs:string"/>
+                <xs:element name="accountType" type="xs:string"/>
+                <xs:element name="DocProvided" type="xs:string"/>
+                <xs:element name="SchemeCode" type="xs:string"/>
+                <xs:element name="AccountCategory" type="xs:string"/>
+                <xs:element name="DeferralInPlace" type="xs:string"/>
+                <xs:element name="DeferralApprover" type="xs:string"/>
+                <xs:element name="DeferralExpiryDate" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getConsoleDocResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="serviceStatus" type="tns:consoleStatus"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="consoleStatus">
+        <xs:sequence>
+            <xs:element name="status" type="xs:string"/>
+            <xs:element name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

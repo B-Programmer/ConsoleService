@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:int="http://console.bprogrammer.com/doc/integrify-console-service">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <int:getConsoleDocRequest>
+            <int:accountNumber>7689509602</int:accountNumber>
+            <int:accountType>CORP NEW</int:accountType>
+            <int:DocProvided>Initial Deposit Taken,KYC Form Verified,Passport Photograph,Utility Bill,BVN</int:DocProvided>
+            <int:SchemeCode>SB112</int:SchemeCode>
+            <int:AccountCategory>SBA</int:AccountCategory>
+            <int:DeferralInPlace>Yes</int:DeferralInPlace>
+            <int:DeferralApprover>NULL</int:DeferralApprover>
+            <int:DeferralExpiryDate>NULL</int:DeferralExpiryDate>
+        </int:getConsoleDocRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

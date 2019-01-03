@@ -1,0 +1,91 @@
+2019-01-02 11:31:44,673 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ConsoleApplication on longbridge-46 with PID 10347 (/home/longbridge/Desktop/Longbridge/ConsoleService/Console/target/classes started by longbridge in /home/longbridge/Desktop/Longbridge/ConsoleService/Console)
+2019-01-02 11:31:44,678 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.2.0.BUILD-SNAPSHOT, Spring v5.1.4.BUILD-SNAPSHOT
+2019-01-02 11:31:44,680 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-01-02 11:31:44,841 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-01-02 11:31:44,841 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-01-02 11:31:46,576 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$553eb9ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-02 11:31:46,679 INFO org.springframework.ws.soap.addressing.server.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-01-02 11:31:47,549 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2019-01-02 11:31:47,573 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2019-01-02 11:31:47,584 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-01-02 11:31:47,585 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-01-02 11:31:47,609 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-01-02 11:31:47,773 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-01-02 11:31:47,774 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2932 ms
+2019-01-02 11:31:49,332 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-02 11:31:49,841 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-01-02 11:31:49,877 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2019-01-02 11:31:49,927 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2019-01-02 11:31:49,932 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ConsoleApplication in 7.163 seconds (JVM running for 10.264)
+2019-01-02 11:31:49,935 INFO com.bprogrammer.example.Console.ConsoleApplication [restartedMain] Web service has started
+2019-01-02 11:33:20,960 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring MessageDispatcherServlet 'messageDispatcherServlet'
+2019-01-02 11:33:20,961 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'messageDispatcherServlet'
+2019-01-02 11:33:20,987 INFO org.springframework.ws.soap.saaj.SaajSoapMessageFactory [http-nio-8080-exec-1] Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2019-01-02 11:33:21,008 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 47 ms
+2019-01-02 11:35:35,575 ERROR com.sun.xml.messaging.saaj.soap.MessageImpl [http-nio-8080-exec-2] SAAJ0537: Invalid Content-Type. Could be an error message instead of a SOAP message
+2019-01-02 11:35:35,599 ERROR org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Servlet.service() for servlet [messageDispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.ws.soap.SoapMessageCreationException: Could not create message from InputStream: Invalid Content-Type:application/x-www-form-urlencoded. Is this an error message instead of a SOAP response?; nested exception is com.sun.xml.messaging.saaj.SOAPExceptionImpl: Invalid Content-Type:application/x-www-form-urlencoded. Is this an error message instead of a SOAP response?] with root cause
+com.sun.xml.messaging.saaj.SOAPExceptionImpl: Invalid Content-Type:application/x-www-form-urlencoded. Is this an error message instead of a SOAP response?
+	at com.sun.xml.messaging.saaj.soap.MessageImpl.identifyContentType(MessageImpl.java:740)
+	at com.sun.xml.messaging.saaj.soap.MessageImpl.<init>(MessageImpl.java:331)
+	at com.sun.xml.messaging.saaj.soap.ver1_1.Message1_1Impl.<init>(Message1_1Impl.java:81)
+	at com.sun.xml.messaging.saaj.soap.ver1_1.SOAPMessageFactory1_1Impl.createMessage(SOAPMessageFactory1_1Impl.java:81)
+	at org.springframework.ws.soap.saaj.SaajSoapMessageFactory.createWebServiceMessage(SaajSoapMessageFactory.java:190)
+	at org.springframework.ws.soap.saaj.SaajSoapMessageFactory.createWebServiceMessage(SaajSoapMessageFactory.java:62)
+	at org.springframework.ws.transport.AbstractWebServiceConnection.receive(AbstractWebServiceConnection.java:92)
+	at org.springframework.ws.transport.support.WebServiceMessageReceiverObjectSupport.handleConnection(WebServiceMessageReceiverObjectSupport.java:87)
+	at org.springframework.ws.transport.http.WebServiceMessageReceiverHandlerAdapter.handle(WebServiceMessageReceiverHandlerAdapter.java:61)
+	at org.springframework.ws.transport.http.MessageDispatcherServlet.doService(MessageDispatcherServlet.java:293)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-01-02 11:35:35,604 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-02 11:35:35,604 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2019-01-02 11:35:35,614 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 10 ms
+2019-01-02 11:37:50,256 INFO com.bprogrammer.example.Console.webservices.IntegrifyDocWsdlEndPoint [http-nio-8080-exec-3] IntegrifyDocRequest payload from SOAP service: com.bprogrammer.console.doc.integrify_console_service.GetIntegrifyDocRequest@74780290
+2019-01-02 11:37:50,276 INFO com.bprogrammer.example.Console.services.implementation.IntegrifyDocServiceImpl [http-nio-8080-exec-3] Request for the rest service is: IntegrifyRequest{AccountNumber=4390456011, AccountType='IND NEW', DocProvided='Initial Deposit Taken,KYC Form Verified,Passport Photograph,Utility Bill,BVN', SchemeCode='OD255', AccountCategory='ODA', DeferralInPlace='Not Applicable', DeferralApprover='NULL', DeferralExpiryDate='NULL'}
+2019-01-02 11:37:50,419 INFO com.bprogrammer.example.Console.services.implementation.IntegrifyDocServiceImpl [http-nio-8080-exec-3] response from rest service is: Query threw SQLException:Table 'bcons.account' doesn't exist 
+Bind values:[4390456011] 
+Query was:
+select t0.id c0, t0.account_number c1, t0.account_open_date c2, t0.account_scheme c3, t0.account_category c4, t0.account_currency c5, t0.account_secondary_category c6, t0.broker_code c7, t0.memo_pad c8, t0.closure_flag c9, t0.receive_sms_alert c10, t0.recieve_email_alert c11, t0.cif_id c12, t0.free_text1 c13, t0.free_text2 c14, t0.free_text3 c15, t0.free_text4 c16, t0.free_text5 c17, t0.free_text6 c18, t0.free_text7 c19, t0.free_text8 c20, t0.free_text9 c21, t0.free_text10 c22, t0.free_text11 c23, t0.free_text12 c24, t0.free_text13 c25, t0.free_text14 c26, t0.free_text15 c27, t0.account_officer_code c28, t0.account_officer_desc c29, t0.branch_sol c30, t0.branch_id c31 from account t0 where t0.account_number = ?  
+
+
+2019-01-02 11:40:32,751 INFO com.bprogrammer.example.Console.webservices.ConsoleDocWsdlEndPoint [http-nio-8080-exec-5] ConsoleDocRequest payload from SOAP service: com.bprogrammer.console.doc.integrify_console_service.GetConsoleDocRequest@36425c7b
